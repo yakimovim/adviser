@@ -144,6 +144,14 @@
     <Compile Include="Controls\PlatformsSupport\PlatformsManager.Designer.cs">
       <DependentUpon>PlatformsManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\RtfEditor\RTFEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RtfEditor\RTFEditor.Designer.cs">
+      <DependentUpon>RTFEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RtfEditor\SymbolsManager.cs" />
+    <Compile Include="Controls\RtfEditor\Utils.cs" />
     <Compile Include="Controls\TopicsTree\TopicPropertiesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +217,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>PlatformsManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RtfEditor\RTFEditor.resx">
+      <DependentUpon>RTFEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\TopicsTree\TopicPropertiesForm.resx">
       <SubType>Designer</SubType>
       <DependentUpon>TopicPropertiesForm.cs</DependentUpon>
@@ -260,10 +272,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Controls\Src\.NET Framework 4.0\Controls\Controls.csproj">
-      <Project>{4202557b-5a1b-4caa-a4a7-162c4d09e9a8}</Project>
-      <Name>Controls</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AdviserLib\AdviserLib.csproj">
       <Project>{870BCF2C-1E88-44C5-99F0-BDF67A46B2FE}</Project>
       <Name>AdviserLib</Name>
@@ -276,11 +284,28 @@
   <ItemGroup>
     <Content Include="Images\archivero.ico" />
     <Content Include="Images\Back.bmp" />
+    <Content Include="Images\BGR.bmp" />
+    <Content Include="Images\BLD.BMP" />
+    <Content Include="Images\BLT.bmp" />
+    <Content Include="Images\CLR.bmp" />
+    <Content Include="Images\CNT.BMP" />
     <Content Include="Images\CreateSubTopic.BMP" />
     <Content Include="Images\CreateTopLevelTopic.BMP" />
     <Content Include="Images\DeleteTopic.BMP" />
+    <Content Include="Images\UNDO.BMP" />
+    <Content Include="Images\UNDRLN.BMP" />
+    <Content Include="Images\WORDWRP.BMP" />
     <None Include="Images\Hyperlink.bmp" />
+    <Content Include="Images\FMT.bmp" />
+    <Content Include="Images\FNT.bmp" />
     <Content Include="Images\Forward.bmp" />
+    <Content Include="Images\ITL.BMP" />
+    <Content Include="Images\LFT.BMP" />
+    <Content Include="Images\REDO.BMP" />
+    <Content Include="Images\RT.BMP" />
+    <Content Include="Images\SUB.bmp" />
+    <Content Include="Images\SUPER.bmp" />
+    <Content Include="Images\SYMBOL.bmp" />
     <Content Include="Images\Sync.bmp" />
     <Content Include="Images\TopicProperties.BMP" />
   </ItemGroup>
